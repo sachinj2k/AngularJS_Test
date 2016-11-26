@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="assignmentApp">
  <head>
    <meta charset="utf-8">
    <title>Coursera</title>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <link href="style.css" rel="stylesheet"/>
+   <script src="app.js"></script>
  </head>
- <body>
- <h1>Hello Worlstudentsd</h1> 
+ <body ng-controller="myController">
+   <div>
+     Enter choice here
+    <input type="text" ng-model="name">
+    <button type="button" width="50" ng-click="checkDishes()">Check If Too Much</button>
+    {{message}}
+   </div>
  </body>
 </html>
