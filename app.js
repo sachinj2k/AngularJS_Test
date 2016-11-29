@@ -10,13 +10,13 @@
         console.log("dishesArray"+dishesArray.length);
         if(dishesArray.length >3)
         {
-          $scope.message = "too much";
+          $scope.message = "Too Much";
         }else{
-          $scope.message = "enjoy";
+          $scope.message = "Enjoy";
         }
 
       }else {
-        $scope.message="enter values";
+        $scope.message="Please Enter dish values";
         return;
       }
     }
